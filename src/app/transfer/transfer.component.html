@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="container py-5">
+    <h1 class="text-center fw-bold pb-3">BANK TRANSFER</h1>
+
+<form (ngSubmit)="onSubmit()">
+
+<div class="mb-4"></div>
+<div class="form-group mt-3">
+<label class="py-2">ACCOUNT HOLDER NAME:</label>
+ <input type="text " class="form-control" id="receipient_name"
+      [(ngModel)]= "banktransfer.receipent_name" name="receipient_name">
+</div>
+<div class="form-group mt-4">
+    <label class="py-2">ACCOUNT NUMBER:</label>
+ <input type="number " class="form-control" id="account_number"
+       [(ngModel)]= "banktransfer.account_no" name="account_number">   
+</div>
+<div class="form-group mt-4">
+    <label class="py-2"> CONFIRM ACCOUNT NUMBER:</label>
+ <input type="number " class="form-control" id="account_number"
+       [(ngModel)]= "banktransfer.account_no" name="account_number">   
+</div>
+<div class="form-group mt-4">
+    <label class="py-2">IFSC NUMBER:</label>
+ <input type="number " class="form-control" id="ifsc_number"
+       [(ngModel)]= "banktransfer. ifsc_no" name="ifsc_number">   
+</div>
+<div class="form-group mt-4">
+    <label class="py-2">AMOUNT:</label>
+ <input type="number " class="form-control" id="amount"
+       [(ngModel)]= "banktransfer.amount" name="amount">   
+</div>
+<div class="d-grid gap-2 mt-5">
+    <button class="btn btn-primary" type="button">Confirm</button>
+    
+  </div>
+</form>
+</div>
+
+<div>
+
+<app-footer></app-footer>
+</div>

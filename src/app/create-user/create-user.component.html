@@ -1,0 +1,101 @@
+<app-navbar></app-navbar>
+    <div class="container py-5">
+        <h1 class="text-center fw-bold pb-3">Create Account</h1>
+
+    <form (ngSubmit)="onSubmit()">
+
+    <div class="mb-4"></div>
+    <div class="form-group mt-3">
+    <label class="py-2">ID:</label>
+     <input type="text " class="form-control" id="id"
+           [(ngModel)]= "createuser.id"name=id> 
+    </div>
+   <div class="form-group mt-4">
+        <label class="py-2">PASSWORD:</label>
+     <input type="text " class="form-control" id="Password"
+     [(ngModel)]= "createuser.Password" name="Password">   
+    </div>
+    <div class="form-group mt-4">
+        <label class="py-2">FULL NAME:</label>
+     <input type="text " class="form-control" id="Name"
+           [(ngModel)]= "createuser.Name" name="Name">   
+    </div>
+    <div class="form-group mt-4">
+        <label class="py-2">FATHER's NAME</label>
+     <input type="text " class="form-control" id="Fathers_name"
+           [(ngModel)]= "createuser.Fathers_name" name="Fathers_name">   
+    </div>
+    <div class="form-group mt-4">
+        <label class="py-2">MOTHER's NAME</label>
+     <input type="text " class="form-control" id="Mothers_name"
+           [(ngModel)]= "createuser.Mothers_name" name="Mothers_name">   
+    </div>
+    <div class="form-group mt-4">
+        <label for="contact-us-subject" class="form-level py-2" >ID PROOF TYPE:</label>
+        <select class="form-select" aria-label="default select example">
+            <option value="1">Pan Card</option>
+            <option value="2">Aadhar Card</option>
+            <option value="3">Driving License</option>
+        </select>
+     <!-- <input type="number " class="form-control" id="Aadhar_card"
+           [(ngModel)]= "createuser.Aadhar_card" name="Aadhar_card">    -->
+    </div>
+
+    <div class="form-group mt-4">
+        <label class="py-2">ID PROOF NB:</label>
+        <input type="number " class="form-control" id="Aadhar_card"
+        [(ngModel)]= "createuser.Aadhar_card" name="Aadhar_card">   
+    </div>
+    <!-- <div class="form-group mt-4">
+        <label class="py-2">CONTACT NUMBER:</label>
+     <input type="text " class="form-control" id="contact_number"
+           [(ngModel)]= "user.contact_number" name="contact_number">   
+    </div> -->
+    <div class="form-group mt-4">
+        <label for="contact-us-subject" class="form-level py-2" >GENDER:</label>
+        <select class="form-select" aria-label="default select example">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Others</option>
+        </select>
+        </div>
+
+    <div class="form-group mt-5">
+    <label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+</div>
+   
+    <div class="form-group mt-5">
+        <label class="py-2">ADDRESS</label>
+        <textarea name="address" class="form-control" id="address" cols="100" rows="4"></textarea>
+     
+           <!-- [(ngModel)]= "user.address" name="address">    -->
+    </div>
+    <div class="form-group mt-4">
+        <label class="py-2">PHONE NUMBER</label>
+     <input type="text " class="form-control" id="Phone_nb"
+           [(ngModel)]= "createuser.Phone_nb" name="Phone_nb">   
+    </div>
+    <div class="form-group mt-4">
+        <label class="py-2">NOMINEE</label>
+     <input type="text " class="form-control" id="Address"
+           [(ngModel)]= "createuser.Nominee" name="Address">   
+    </div>
+    <!-- <div class="form-group mt-4">
+        <label class="py-2">NOMINEE</label>
+     <input type="text " class="form-control" id="nominee"
+           [(ngModel)]= "user.nominee" name="nominee">   
+    </div>
+    <div class="form-group mt-4">
+        <label class="py-2">NOMINEE ADDRESS</label>
+     <input type="text " class="form-control" id="nominee_address"
+           [(ngModel)]= "user.nominee_address" name="nominee_address">   
+    </div> -->
+    <button class="btn btn-outline-primary mt-4 " type="submit">SUBMIT</button>
+
+</form>
+
+</div>
+<app-footer></app-footer>
+
+

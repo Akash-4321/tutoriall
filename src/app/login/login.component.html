@@ -1,0 +1,40 @@
+<section class="login-wrapper">
+      <div class="container">
+        <div class="user signinBx">
+          <div class="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg" alt="" /></div>
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
+              <h2>Sign In</h2>
+              <input type="text" name="" placeholder="Username"  [(ngModel)]= "modell.userid" name="userid"/>
+              <input type="password" name="" placeholder="Password" [(ngModel)]= "modell.password" name="password" />
+              <button type="button" (click)="signin()">Login</button>
+              <p class="signup">
+                Don't have an account ?
+                <button class="toggle-button-login-signup" onclick="toggleForm();">Sign up.</button>
+              </p>
+              <p class="signup">
+                Login as a Manager ?
+                <button class="toggle-button-login-signup" routerLink="/banklogin">Log In.</button>
+                </p>
+            </form>
+          </div>
+        </div>
+        <div class="user signupBx">
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
+              <h2>Create an account</h2>
+              <input type="text" name="" placeholder="Username" />
+              <input type="email" name="" placeholder="Email Address"/>
+              <input type="password" name="" placeholder="Create Password" />
+              <input type="password" name="" placeholder="Confirm Password" />
+              <input type="submit" name="" value="Sign Up" />
+              <p class="signup">
+                Already have an account ?
+                <button class="toggle-button-login-signup" onclick="toggleForm();">Sign in.</button>
+              </p>
+            </form>
+          </div>
+          <div class="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img2.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
